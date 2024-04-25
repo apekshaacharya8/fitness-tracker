@@ -3,8 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { WorkoutsComponent } from './components/workouts/workouts.component';
+import { ExerciseComponent } from './components/exercise/exercise.component';
+import { GoalsComponent } from './components/goals/goals.component';
+import { AuthenticationComponent } from './components/authentication/authentication.component';
 
 
 @NgModule({
@@ -13,12 +18,23 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-
+      { path: '', component: DashboardComponent },
+      // { path: 'login', component: LoginComponent },
+      { path: 'signup', component: AuthenticationComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'workouts', component: WorkoutsComponent },
+      { path: 'exercises', component: ExerciseComponent },
+      { path: 'goals', component: GoalsComponent }
     ])
   ],
   declarations: [
     AppComponent,
-
+    DashboardComponent,
+    AuthenticationComponent,
+    ProfileComponent,
+    WorkoutsComponent,
+    ExerciseComponent,
+    GoalsComponent
   ],
   bootstrap: [
     AppComponent
