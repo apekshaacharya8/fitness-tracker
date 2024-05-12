@@ -11,41 +11,90 @@
       </ul>
   </div>
 </nav>
+<!--Body -->
 
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+      <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="w-100" src="assets/img/carousel-1.jpg" alt="Image">
+                  <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                      <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
+                      <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Best Gym In Town</h2>
+                      <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img class="w-100" src="assets/img/carousel-2.jpg" alt="Image">
+                  <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                      <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
+                      <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Get Body In Shape</h2>
+                      <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+  </div>
+  <!-- Carousel End -->
 
   <router-outlet></router-outlet>
 
-<footer class="footer">
-  <div class="container">
-      <div class="footer-content">
-          <div class="footer-section about">
-              <h2 class="logo">FitnessApp</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada, justo in fermentum sollicitudin.</p>
-              <div class="contact">
-                  <span><i class="fas fa-phone"></i> +1234567890</span>
-                  <span><i class="fas fa-envelope"></i> info@fitnessapp.com</span>
-              </div>
-              <div class="socials">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-              </div>
-          </div>
-          <div class="footer-section links">
-              <h2>Quick Links</h2>
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Workouts</a></li>
-                  <li><a href="#">Nutrition</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  <div class="footer-bottom">
-      &copy; 2024 FitnessApp. All rights reserved.
-  </div>
-</footer>
+  <!-- Footer Start -->
+  <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-primary mb-4">Get In Touch</h4>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>123 street , Mangalore Kanataka</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><.com class="fa fa-envelope mr-2">apekshaacharya88@gmail.com</p>
+            <div class="d-flex justify-content-start mt-4">
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-primary mb-4">Quick Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-primary mb-4">Popular Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-primary mb-4">Opening Hours</h4>
+            <h5 class="text-white">Monday - Friday</h5>
+            <p>8.00 AM - 8.00 PM</p>
+            <h5 class="text-white">Saturday - Sunday</h5>
+            <p>2.00 PM - 8.00 PM</p>
+        </div>
+    </div>
+    <div class="container border-top border-dark pt-5">
+        <p class="m-0 text-center text-white">
+            &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
+           Apeksha Acharya
+        </p>
+    </div>
+</div>
+<!-- Footer End -->
 
